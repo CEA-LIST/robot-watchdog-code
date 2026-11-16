@@ -36,8 +36,8 @@ and 13) from the object trajectories extracted from the videos (VLM initialisati
 The environment is managed with [uv](https://docs.astral.sh/uv/) (Python 3.10, PyTorch 2.6):
 
 ```bash
-git clone <this repository> robot-watchdog
-cd robot-watchdog
+git clone https://github.com/CEA-LIST/robot-watchdog-code.git
+cd robot-watchdog-code
 uv sync
 ```
 
