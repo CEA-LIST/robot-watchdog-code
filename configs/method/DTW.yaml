@@ -1,0 +1,8 @@
+# Soft Dynamic Time Warping (Soft-DTW, trajectory matching baseline)
+name: DTW
+kind: non_parametric
+reference_ratio: 0.55
+
+gamma: 0.1 # soft-min smoothing
+normalize: true
+eps: 1e-8

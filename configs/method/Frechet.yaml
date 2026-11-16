@@ -1,0 +1,8 @@
+# Arc-length prefix Frechet (AP-Frechet, trajectory matching baseline)
+name: Frechet
+kind: non_parametric
+reference_ratio: 0.55
+
+resample_N: 198 # number of points of the arc-length resampling
+normalize: true
+eps: 1e-8

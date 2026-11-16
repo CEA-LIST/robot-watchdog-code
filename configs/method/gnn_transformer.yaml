@@ -1,0 +1,13 @@
+# GCN graph encoder (global pooling) + temporal Transformer
+name: gnn_transformer
+kind: predictive
+
+m: 8
+L: 16
+hidden_dim: 32
+nhead: 4
+num_layers: 2
+batch_size: 32
+lr: 1e-3
+weight_decay: 1e-4
+epochs: 60

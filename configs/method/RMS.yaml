@@ -1,0 +1,4 @@
+# Arc-length prefix RMS (AP-RMS, trajectory matching baseline)
+name: RMS
+kind: non_parametric
+reference_ratio: 0.55

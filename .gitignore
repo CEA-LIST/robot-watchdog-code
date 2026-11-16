@@ -1,0 +1,16 @@
+# data (distributed through the GitHub release) and experiment outputs
+data/
+outputs/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+build/
+dist/
+
+# editors / OS
+.vscode/
+.idea/
+.DS_Store

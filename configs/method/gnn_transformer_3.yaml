@@ -1,0 +1,13 @@
+# GnnT: edge-aware GATv2 spatial encoder + spatio-temporal Transformer (model of the paper)
+name: gnn_transformer_3
+kind: predictive
+
+m: 20 # observation window
+L: 15 # prediction horizon
+hidden_dim: 128
+nhead: 8
+num_layers: 4
+batch_size: 256
+lr: 1e-3
+weight_decay: 1e-4
+epochs: 60

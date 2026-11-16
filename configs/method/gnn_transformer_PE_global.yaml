@@ -1,0 +1,13 @@
+# GnnT with an additional global positional encoding (episode progress)
+name: gnn_transformer_PE_global
+kind: predictive
+
+m: 20
+L: 15
+hidden_dim: 128
+nhead: 8
+num_layers: 4
+batch_size: 256
+lr: 1e-3
+weight_decay: 1e-4
+epochs: 200

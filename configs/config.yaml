@@ -1,0 +1,26 @@
+defaults:
+  - _self_
+  - method: TPC # TPC, gnn_transformer_3 (GnnT), gnn_transformer, gnn_transformer_PE_global, RMS, Frechet, DTW
+  - threshold: conformal_prediction_time_all
+
+# task, one of:
+#   Robot-WATCHDOG dataset : aloha_setTheTable_2 (table setting), sort_trash_conveyor (waste sorting)
+#   BotFails               : domotic_setTheTable, domotic_dishTidyUp, domotic_vegetablesAndFruitsSorting,
+#                            domotic_groceriesSorting
+task: aloha_setTheTable_2
+
+# the seed draws the expert train / calibration split, the conformal split and the network initialisation
+seed: 1
+device: cuda
+
+# paths (relative to the directory the command is run from)
+data_dir: data # <data_dir>/<task>/{expert.json, anomaly.json, labels/}
+output_dir: outputs
+result_dir: ${output_dir}/seed_${seed} # scores and metrics of every (method, task) for this seed
+weights_dir: ${output_dir}/weights # trained predictive models
+
+hydra:
+  run:
+    dir: ${output_dir}/hydra/${method.name}_${task}_seed${seed}
+  job:
+    chdir: false

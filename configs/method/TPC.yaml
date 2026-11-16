@@ -1,0 +1,13 @@
+# Trajectory Projection and Correlation (non-parametric)
+name: TPC
+kind: non_parametric
+
+# fraction of the expert demonstrations used as the reference set, the rest calibrates the threshold
+reference_ratio: 0.55
+
+weight_mode: exp # temporal weights: "exp", "linear" or "uniform"
+decay: 0.2 # rate of the exponential weights
+score_type: proj_only # "proj_only", "corr_only" or "both" (projection + correlation penalty)
+normalize: false # standardise the projection distances with the expert pairwise statistics
+incremental: true # streaming computation of the projection score (same values, constant cost per step)
+eps: 1e-6
