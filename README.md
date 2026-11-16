@@ -14,8 +14,6 @@ Official code of **Robot-WATCHDOG** (CoRL 2026).
 
 <a href='https://cea-list.github.io/Robot-WATCHDOG/'><img src='https://img.shields.io/badge/Project-Page-Green'></a> <a href='https://arxiv.org/abs/2610.13403'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> <a href='LICENSE'><img src='https://img.shields.io/badge/Code-MIT-yellow'></a> <a href='https://creativecommons.org/licenses/by/4.0/'><img src='https://img.shields.io/badge/Data-CC%20BY%204.0-lightgrey'></a>
 
-[Project page](https://cea-list.github.io/Robot-WATCHDOG/)
-
 Robot-WATCHDOG detects failures of learned robotic policies from nominal demonstrations only. Each
 manipulation episode is abstracted into a sequence of object-centric graphs (tracked objects and their
 pairwise relations), on which we study two failure scores:
