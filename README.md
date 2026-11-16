@@ -48,8 +48,8 @@ The object trajectories and the per-frame failure labels are distributed as an a
 at the root of the repository:
 
 ```bash
-gh release download --pattern robot_watchdog_data.zip   # or download it from the release page
-unzip robot_watchdog_data.zip                            # creates data/
+curl -LO https://github.com/CEA-LIST/robot-watchdog-code/releases/latest/download/robot_watchdog_data.zip
+unzip robot_watchdog_data.zip   # creates data/
 ```
 
 The archive contains the 6 tasks of the paper:
